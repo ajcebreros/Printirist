@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: cyan;
+}
+
+/* HEADER */
+header {
+  background: #111;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid cyan;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header button {
+  background: cyan;
+  color: #000;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* FORM */
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+select,
+input,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: none;
+}
+
+input,
+select {
+  background: #111;
+  color: cyan;
+  border: 1px solid cyan;
+}
+
+#preview {
+  margin-top: 10px;
+  max-width: 120px;
+  max-height: 120px;
+  display: none;
+  border: 1px solid cyan;
+  padding: 5px;
+}
+
+#codInfo,
+#payInstructions {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px dashed cyan;
+}
+
+.price {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.submit-btn {
+  background: cyan;
+  color: #000;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #00bfbf;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid cyan;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #111;
+}
+
+tr:nth-child(even) {
+  background: #111;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.back-btn {
+  position: fixed;
+  top:120px;
+  left: 20px;
+  z-index: 1000;
+  background: #0471ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(4, 113, 255, 0.5);
+}
+
+.back-btn:hover {
+  background: #0359d4;
+  box-shadow: 0 0 15px rgba(4, 113, 255, 0.8);
+  transform: translateX(-3px);
+}

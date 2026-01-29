@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Dashboard - Printing & Scanning</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body { background:#000; color:cyan; font-family: Arial, sans-serif; margin:0; padding:0; }
+  header { background: #111; padding:15px; display:flex; justify-content:space-between; align-items:center; }
+  header h1 { margin:0; color: cyan; }
+  header button { background: cyan; color:#000; border:none; padding:8px 12px; cursor:pointer; border-radius:5px; }
+  .container { padding:20px; max-width:1400px; margin:auto; }
+  table { width:100%; border-collapse:collapse; margin-top:20px; }
+  th, td { border:1px solid cyan; padding:10px; text-align:center; }
+  th { background:#111; }
+  tr:nth-child(even) { background:#111; }
+  .message-box { display:flex; flex-direction:column; }
+  .chat-log { max-height:80px; overflow:auto; border:1px solid cyan; padding:5px; margin-bottom:5px; }
+  button { padding:5px 10px; border-radius:5px; border:none; background: cyan; color:#000; cursor:pointer; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Staff Dashboard</h1>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+
+<h2>Client Requests</h2>
+<table id="staffTable"></table>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+window.onload = loadStaffDashboard;
+</script>
+</body>
+</html>
