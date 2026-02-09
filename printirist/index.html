@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>PrintHub | Home</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header>
+  <h1>🖨 PrintHub</h1>
+  <p>Fast, Easy, and Reliable Printing Services</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="upload.html">Upload</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<section class="feature-section">
+
+    <!-- LEFT: IMAGE SLIDER -->
+    <div class="slider">
+      <img src="images/print.svg" class="slide active">
+      <img src="images/print2.svg" class="slide">
+      <img src="images/print3.svg" class="slide">
+  
+      <button class="prev" onclick="changeSlide(-1)">❮</button>
+      <button class="next" onclick="changeSlide(1)">❯</button>
+  
+      <div class="dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+  
+    <!-- RIGHT: PROMO INFO -->
+    <div class="promo">
+      <div class="promo-main">
+        <span class="badge">NEW</span>
+        <h2>Fast & Free Printing</h2>
+        <p>No lines · No stress · Premium quality</p>
+        <a href="upload.html" class="btn">Print Now</a>
+      </div>
+  
+      <div class="promo-grid">
+        <div class="mini-card">
+          <h3>School & Office Prints</h3>
+          <p>Documents · IDs · Reports</p>
+        </div>
+        <div class="mini-card">
+          <h3>Custom Printing</h3>
+          <p>T-Shirts · Tarpaulin · Stickers</p>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  
+
+<section class="hero">
+  <h2>Your documents, printed perfectly.</h2>
+  <a href="upload.html" class="btn">Print/Scan Now
+  </a>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+  
+      <div class="footer-column">
+        <h3>Printirist</h3>
+        <p>National Highway, Borongan Eastern Samar</p>
+        <p>Mon - Fri: 9am - 9pm</p>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Contact: 0995-932-6812</p>
+        <p>Email: printirist@gmail.com</p>
+      </div>
+  
+      <div class="footer-column">
+        <h3>Support/Follow</h3>
+        <p>
+          <a href="https://www.facebook.com/share/1C3Nc9xnj4/">Facebook</a> ·
+          <a href="#">Instagram</a> ·
+          <a href="#">YouTube</a>
+        </p>
+      </div>
+  
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2026 Printirist. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

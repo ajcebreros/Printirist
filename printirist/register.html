@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-box">
+        <h2>Register</h2>
+        <input type="text" id="regName" placeholder="Full Name">
+        <input type="email" id="regEmail" placeholder="Email">
+        <div style="position:relative;">
+            <input type="password" id="regPass" placeholder="Password">
+            <span onclick="toggleRegPass()" 
+                  style="position:absolute; right:10px; top:12px; cursor:pointer;">👁</span>
+          </div>
+          
+        <button onclick="register()">Register</button>
+      
+        <p style="margin-top:15px; font-size:14px;">
+          Already have an account?
+          <a href="login.html" style="color:#0066ff; text-decoration:none; font-weight:600;">
+            Login
+          </a>
+        </p>
+        
+      </div>      
+<script src="script.js"></script>
+</body>
+</html>

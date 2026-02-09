@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload Order</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Place Printing Order</h2>
+
+<input type="file" id="fileInput"><br><br>
+
+<select id="color">
+  <option value="bw">Black & White</option>
+  <option value="color">Colored</option>
+</select>
+
+<input type="number" id="copies" placeholder="Copies">
+
+<label><input type="checkbox" id="lamination"> Lamination</label>
+<label><input type="checkbox" id="binding"> Binding</label>
+
+<h3>Total: $<span id="total">0</span></h3>
+
+<button onclick="placeOrder()">Submit Order</button>
+
+<script src="script.js"></script>
+</body>
+</html>

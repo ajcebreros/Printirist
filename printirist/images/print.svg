@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00c6ff"/>
+      <stop offset="100%" stop-color="#007bff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g1)"/>
+  <g fill="#fff" font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="50%" y="45%" font-size="64" font-weight="700">Print Services</text>
+    <text x="50%" y="58%" font-size="28">Fast · Reliable · High Quality</text>
+  </g>
+  <g transform="translate(60,60)" fill="#ffffff" opacity="0.12">
+    <rect x="0" y="0" width="220" height="140" rx="14"/>
+  </g>
+</svg>
